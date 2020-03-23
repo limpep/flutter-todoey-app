@@ -30,4 +30,6 @@ class TaskData with ChangeNotifier {
     _tasks.remove(task);
     notifyListeners();
   }
+
+  List<Task> get getAllTasks => _tasks;
 }
